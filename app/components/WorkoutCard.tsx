@@ -5,10 +5,7 @@ interface WorkoutCardProps {
   isToday?: boolean;
 }
 
-export default function WorkoutCard({
-  workout,
-  isToday = false,
-}: WorkoutCardProps) {
+export default function WorkoutCard({ workout }: WorkoutCardProps) {
   return (
     <div>
       <h2 className="text-2xl font-bold text-blue-600 mb-6">{workout.name}</h2>
