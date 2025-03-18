@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="16" fill="#2563eb"/>
+  
+  <!-- A/B Text -->
+  <text x="16" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+    A/B
+  </text>
+  
+  <!-- Circular Progress Arc (representing the dual nature of the program) -->
+  <path d="M16 2A14 14 0 0 1 30 16" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M16 30A14 14 0 0 1 2 16" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+</svg> 
