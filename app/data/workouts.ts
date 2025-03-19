@@ -183,9 +183,45 @@ export const schedule1: WorkoutSchedule = {
       notes: "Morning: Heavy leg workout, Evening: Easy run or rest",
     },
     friday: {
-      type: "active-recovery",
-      name: "Active Recovery + Easy Run",
+      type: "active-recovery + push/pull",
+      name: "Active Recovery + Push/Pull + Easy Run",
       exercises: [
+        {
+          name: "Push-Ups",
+          sets: 3,
+          reps: "10-15",
+          notes: "Focus on form and control",
+        },
+        {
+          name: "Dumbbell Rows",
+          sets: 3,
+          reps: "12-15",
+          notes: "Light weight, perfect form",
+        },
+        {
+          name: "Lateral Raises",
+          sets: 3,
+          reps: "12-15",
+          notes: "Light weight, controlled movement",
+        },
+        {
+          name: "Face Pulls",
+          sets: 3,
+          reps: "15-20",
+          notes: "Focus on rear delts and rotator cuff",
+        },
+        {
+          name: "Cable Tricep Pushdowns",
+          sets: 3,
+          reps: "15-20",
+          notes: "Light weight, focus on contraction",
+        },
+        {
+          name: "Dumbbell Hammer Curls",
+          sets: 3,
+          reps: "12-15",
+          notes: "Light weight, controlled tempo",
+        },
         {
           name: "Core Circuit",
           sets: 3,
@@ -204,9 +240,14 @@ export const schedule1: WorkoutSchedule = {
           reps: "10-15 min",
           notes: "Static stretches",
         },
-        { name: "Easy Run", sets: 1, reps: "2-3 miles", notes: "Zone 2 pace" },
+        {
+          name: "Easy Run",
+          sets: 1,
+          reps: "2-3 miles",
+          notes: "Zone 2 pace",
+        },
       ],
-      notes: "Focus on recovery and mobility",
+      notes: "Focus on form and recovery while maintaining activity",
     },
     saturday: {
       type: "moderate-legs + core",
@@ -376,6 +417,7 @@ export const schedule2: WorkoutSchedule = {
           reps: "8-10",
           notes: "Pull to lower ribcage",
         },
+        { name: "Lat Pulldowns", sets: 3, reps: "10-12", notes: "Wide grip" },
         {
           name: "Face Pulls",
           sets: 3,
@@ -388,7 +430,27 @@ export const schedule2: WorkoutSchedule = {
           reps: "10-12",
           notes: "No swinging",
         },
+        {
+          name: "Incline Dumbbell Curls",
+          sets: 3,
+          reps: "10-12",
+          notes: "Full stretch",
+        },
+        { name: "Hammer Curls", sets: 3, reps: "10-12", notes: "Neutral grip" },
         { name: "Push-Ups", sets: 2, reps: "15", notes: "To fatigue" },
+        {
+          name: "Reverse Curls",
+          sets: 3,
+          reps: "12-15",
+          notes: "Full stretch",
+        },
+        { name: "Wrist Curls", sets: 4, reps: "15-20", notes: "Forearm focus" },
+        {
+          name: "Reverse Wrist Curls",
+          sets: 3,
+          reps: "12-15",
+          notes: "Forearm balance",
+        },
         {
           name: "PR Run",
           sets: 1,
@@ -442,9 +504,45 @@ export const schedule2: WorkoutSchedule = {
       notes: "Warm-up: 5 min cardio + dynamic drills",
     },
     friday: {
-      type: "active-recovery",
-      name: "Core & Mobility",
+      type: "active-recovery + push/pull",
+      name: "Push/Pull + Core & Mobility",
       exercises: [
+        {
+          name: "Incline Push-Ups",
+          sets: 3,
+          reps: "12-15",
+          notes: "Control tempo",
+        },
+        {
+          name: "Band Pull-Aparts",
+          sets: 3,
+          reps: "15-20",
+          notes: "Focus on shoulder retraction",
+        },
+        {
+          name: "Dumbbell Shoulder Press",
+          sets: 3,
+          reps: "12-15",
+          notes: "Light weight, perfect form",
+        },
+        {
+          name: "Resistance Band Rows",
+          sets: 3,
+          reps: "15-20",
+          notes: "Squeeze shoulder blades",
+        },
+        {
+          name: "Resistance Band Tricep Extensions",
+          sets: 3,
+          reps: "15-20",
+          notes: "Focus on full range of motion",
+        },
+        {
+          name: "Resistance Band Curls",
+          sets: 3,
+          reps: "15-20",
+          notes: "Controlled movement, no swinging",
+        },
         {
           name: "Foam Rolling",
           sets: 1,
@@ -470,7 +568,7 @@ export const schedule2: WorkoutSchedule = {
           notes: "Recovery pace",
         },
       ],
-      notes: "Focus on recovery and injury prevention",
+      notes: "Light weights, focus on form and mind-muscle connection",
     },
     saturday: {
       type: "moderate-legs + core",
@@ -533,6 +631,255 @@ export const schedule2: WorkoutSchedule = {
         },
       ],
       notes: "Focus on recovery and gentle activity",
+    },
+  },
+};
+
+export const schedule3: WorkoutSchedule = {
+  type: "schedule3",
+  weekNumber: 3,
+  workouts: {
+    monday: {
+      type: "moderate-legs + core",
+      name: "Moderate Leg Day + Optional Run",
+      exercises: [
+        {
+          name: "Squats",
+          sets: 3,
+          reps: "8-10",
+          notes: "Moderate weight (70-75% 1RM)",
+        },
+        {
+          name: "Romanian Deadlifts",
+          sets: 3,
+          reps: "8-10",
+          notes: "Focus on hip hinge movement",
+        },
+        {
+          name: "Bulgarian Split Squats",
+          sets: 3,
+          reps: "10-12/leg",
+          notes: "Control the movement",
+        },
+        {
+          name: "Calf Raises",
+          sets: 3,
+          reps: "15-20",
+          notes: "Full range of motion",
+        },
+        {
+          name: "Light Run",
+          sets: 1,
+          reps: "2-3 miles",
+          notes: "Optional evening run, easy pace",
+        },
+      ],
+      notes: "24+ hours recovery before Tuesday's PR run",
+    },
+    tuesday: {
+      type: "push/pull",
+      name: "Upper Push/Pull + PR Run",
+      exercises: [
+        {
+          name: "Bench Press",
+          sets: 4,
+          reps: "8-10",
+          notes: "Moderate to heavy weight",
+        },
+        {
+          name: "Overhead Press",
+          sets: 3,
+          reps: "8-10",
+          notes: "Focus on strict form",
+        },
+        {
+          name: "Barbell Rows",
+          sets: 4,
+          reps: "10-12",
+          notes: "Control the eccentric",
+        },
+        {
+          name: "Pull-ups/Lat Pulldowns",
+          sets: 3,
+          reps: "8-10",
+          notes: "Choose based on strength level",
+        },
+        {
+          name: "Tricep Extensions",
+          sets: 3,
+          reps: "12-15",
+          notes: "Focus on contraction",
+        },
+        {
+          name: "PR Run",
+          sets: 1,
+          reps: "2-3 miles",
+          notes: "Evening: Push for personal record",
+        },
+      ],
+      notes: "Upper body workout early to keep legs fresh for PR run",
+    },
+    wednesday: {
+      type: "pull/push",
+      name: "Upper Pull/Push + Heavy Run",
+      exercises: [
+        {
+          name: "Deadlifts",
+          sets: 3,
+          reps: "6-8",
+          notes: "Upper body focus, moderate weight",
+        },
+        {
+          name: "Pull-ups/Chin-ups",
+          sets: 4,
+          reps: "6-8",
+          notes: "Full range of motion",
+        },
+        {
+          name: "Dumbbell Bench Press",
+          sets: 3,
+          reps: "10-12",
+          notes: "Control the movement",
+        },
+        {
+          name: "Lateral Raises",
+          sets: 3,
+          reps: "12-15",
+          notes: "Light to moderate weight",
+        },
+        {
+          name: "Bicep Curls",
+          sets: 3,
+          reps: "10-12",
+          notes: "Focus on form",
+        },
+        {
+          name: "Heavy Run",
+          sets: 1,
+          reps: "3-5 miles",
+          notes: "Evening: Longer distance run",
+        },
+      ],
+      notes: "Schedule upper body early to avoid fatigue during heavy run",
+    },
+    thursday: {
+      type: "active-recovery",
+      name: "Active Recovery Day",
+      exercises: [
+        {
+          name: "Mobility Work",
+          sets: 1,
+          reps: "15-20 min",
+          notes: "Dynamic stretching and mobility",
+        },
+        {
+          name: "Foam Rolling",
+          sets: 1,
+          reps: "15-20 min",
+          notes: "Focus on legs and problem areas",
+        },
+        {
+          name: "Light Jogging/Walking",
+          sets: 1,
+          reps: "20-30 min",
+          notes: "Optional, very light intensity",
+        },
+      ],
+      notes: "Focus on recovery and preparation for heavy leg day",
+    },
+    friday: {
+      type: "heavy-legs + core",
+      name: "Heavy Leg Day",
+      exercises: [
+        {
+          name: "Barbell Back Squats",
+          sets: 4,
+          reps: "6-8",
+          notes: "Heavy weight (80-85% 1RM)",
+        },
+        {
+          name: "Leg Press",
+          sets: 4,
+          reps: "8-10",
+          notes: "Heavy weight, full range",
+        },
+        {
+          name: "Walking Lunges",
+          sets: 3,
+          reps: "10-12/leg",
+          notes: "Controlled steps",
+        },
+        {
+          name: "Leg Extensions",
+          sets: 3,
+          reps: "10-12",
+          notes: "Focus on contraction",
+        },
+        {
+          name: "Seated Calf Raises",
+          sets: 4,
+          reps: "12-15",
+          notes: "Full range of motion",
+        },
+        {
+          name: "Standing Calf Raises",
+          sets: 3,
+          reps: "15-20",
+          notes: "Emphasize peak contraction",
+        },
+      ],
+      notes: "Primary leg mass building day, 48+ hours before next run",
+    },
+    saturday: {
+      type: "technical-legs + core",
+      name: "Technical Leg Day + Optional Run",
+      exercises: [
+        {
+          name: "Front Squats",
+          sets: 3,
+          reps: "8-10",
+          notes: "Light weight, focus on form",
+        },
+        {
+          name: "Hamstring Curls",
+          sets: 3,
+          reps: "12-15",
+          notes: "Controlled movement",
+        },
+        {
+          name: "Step-ups",
+          sets: 3,
+          reps: "12-15/leg",
+          notes: "Focus on stability",
+        },
+        {
+          name: "Single-leg Calf Raises",
+          sets: 3,
+          reps: "15/leg",
+          notes: "Balance and control",
+        },
+        {
+          name: "Light Run",
+          sets: 1,
+          reps: "2-3 miles",
+          notes: "Optional evening run, easy pace",
+        },
+      ],
+      notes: "Keep intensity moderate to maintain running capacity",
+    },
+    sunday: {
+      type: "rest",
+      name: "Complete Rest Day",
+      exercises: [
+        {
+          name: "Rest",
+          sets: 0,
+          reps: "N/A",
+          notes: "Focus on nutrition and recovery",
+        },
+      ],
+      notes:
+        "No structured exercise. Focus on nutrition, hydration, and recovery",
     },
   },
 };

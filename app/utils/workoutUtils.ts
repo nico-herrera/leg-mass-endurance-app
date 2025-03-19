@@ -31,7 +31,17 @@ export function isWorkoutDay(day: string): boolean {
 }
 
 export function getCurrentScheduleType(weekNumber: number): ScheduleType {
-  return weekNumber % 2 === 0 ? "schedule1" : "schedule2";
+  const rotation = weekNumber % 3;
+  switch (rotation) {
+    case 1:
+      return "schedule1";
+    case 2:
+      return "schedule2";
+    case 0:
+      return "schedule3";
+    default:
+      return "schedule1";
+  }
 }
 
 export function getDaysInMonth(year: number, month: number): number {

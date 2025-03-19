@@ -1,6 +1,8 @@
 export type WorkoutType =
   | "push"
   | "pull"
+  | "push/pull"
+  | "pull/push"
   | "heavy-legs"
   | "heavy-legs + core"
   | "moderate-legs"
@@ -8,9 +10,11 @@ export type WorkoutType =
   | "light-legs"
   | "light-legs + core"
   | "active-recovery"
+  | "active-recovery + push/pull"
+  | "technical-legs + core"
   | "rest";
 
-export type ScheduleType = "schedule1" | "schedule2";
+export type ScheduleType = "schedule1" | "schedule2" | "schedule3";
 
 export interface Exercise {
   name: string;
